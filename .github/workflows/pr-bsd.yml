@@ -20,7 +20,7 @@ jobs:
     - uses: actions/checkout@v2
       with:
         submodules: 'recursive'
-    - name: Build
+    - name: Build & Test
       uses: vmactions/freebsd-vm@v0.1.4
       with:
         envs: 'BUILD_TYPE'
